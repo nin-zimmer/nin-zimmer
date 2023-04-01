@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Haris Zimmer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css3?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Pictures/icon.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="hause.html">Hause</a></li>
+                    <li><a href="wohnzimmer.html">Wohnzimmer</a></li>
+                    <li><a href="küche.html">Küche</a></li>
+                    <li><a href="schlafzimmer.html">Schlafzimmer</a></li>
+                    <li><a href="balkon.html">Balkon</a></li>
+                    <li><a href="prices.html">Preise</a></li>
+              </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>       
+        </nav>
+
+        <div class="text-box">
+            <h1>Überprüfen Sie unsere Preise.</h1>
+            <p>Sie werden nicht enttäuscht sein</p>
+            <a href="kontakt.html" class="hero-btn">Kontakt</a>
+        </div>
+
+    </section>
+
+<!--Hause-->
+
+<section class="hause">
+    <h1>Bilder des Hauses</h1>
+
+    <div class="row">
+        <div class="hause-col"><img src="Pictures/Hause/House.jpg"></div>
+    </div>
+    <div class="row">
+        <div class="hause-col"><h2>Neben dem Haus führt eine Treppe zur zweiten Wohnung und zum Balkon der zweiten Wohnung.</h2></div>
+    </div>
+    <div class="row">
+        <div class="hause-col"><h2>Der Parkplatz neben und vor dem Haus ist 50 qm groß.</h2></div>
+    </div>
+    <div class="row">
+        <div class="hause-col"><h2>Beide Apartments verfügen über eine eigene Klimaanlage, falls es Ihnen in den Räumen zu heiß wird.</h2></div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!---ADDING JAVASCRIPT CODE FUNCTION FOR BUTTONS-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+
+
+
+</body>
+</html>

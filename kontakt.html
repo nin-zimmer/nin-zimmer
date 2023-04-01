@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Über uns</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css3?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Pictures/icon.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="hause.html">Hause</a></li>
+                    <li><a href="wohnzimmer.html">Wohnzimmer</a></li>
+                    <li><a href="küche.html">Küche</a></li>
+                    <li><a href="schlafzimmer.html">Schlafzimmer</a></li>
+                    <li><a href="balkon.html">Balkon</a></li>
+                    <li><a href="prices.html">Preise</a></li>
+              </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>       
+        </nav>
+        <h1>Kontakt</h1>
+    </section>
+<!---- Kontakt ---->
+
+<section class="kontakt">
+
+    <iframe src="https://www.google.com/maps/embed?pb=1m18!1m12!1m3!1d31105.73159475817!2d77.67501137986149!3d12.95799701533806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3AOxf8dfc3e8517e4feO!2sCroatia%2C%20Nin!5e0!3m2!1sen!2sin!4v161607075040!5m2!1sen!2sin" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="kontakt-us">
+        <div class="kontakt-col">
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Gib deinen Namen ein" required>
+                <input type="email" name="visitor-email" placeholder="Geben sie ihre E-Mailadresse ein" required>
+                <input type="text" name="subject" placeholder="Betreff eingeben." required>
+                <textarea rows="8" name="message" placeholder="Nachricht"></textarea>
+                <div class="kontakt-btn">
+                    <button type="submit" class="hero-btn1 red-btn">Nachricht senden</button>
+                </div>
+            </form>
+        </div>
+</section>
+</body>
+</html>
